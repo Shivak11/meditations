@@ -1,0 +1,11 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Reflection",
+      "description": "A critique ritual for your own work that reads the preferences you already declared, and keeps a record of what you rejected.",
+      "skills": ["meditations"]
+    }
+  ]
+}

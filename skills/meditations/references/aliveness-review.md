@@ -1,61 +1,27 @@
-# The Aliveness Review
+# Review the choices in the work
 
-Use this review to inspect a concrete artifact or compare taste across surfaces. Keep it inside `meditations` until it has demonstrated independent value across writing, product or interface work, and teaching.
+This is the Aliveness Review used by the `artifact` and `taste` modes. Keep the review within Meditations. Answer from observable evidence and distinguish interpretation from what was observed.
 
-## Run the review
+## Examine five questions
 
-Answer from observable evidence first. For each answer, cite the choice, passage, interaction, visual detail, learner move, or stated preference that supports it. Mark interpretation separately.
+1. **Which deliberate choice distinguishes this work?** Name a decision that a competent alternative could handle differently. If the work follows a common convention, say where and why that matters.
+2. **What attracts attention, and how is it organised?** Identify a specific contrast, surprise, unresolved question or interaction. Explain how hierarchy, pacing or structure makes it understandable. Do not substitute words such as "energy" for an explanation.
+3. **What evidence supports the result?** Identify a concrete constraint, tested interaction, quotation, consequential action or decision. Separate an attractive presentation from evidence that it works.
+4. **Which explanation could be shortened or delayed?** Show where extra explanation reduces participation or obscures the main idea. Preserve information a beginner needs to understand the task.
+5. **Which choices would remain recognisable without the branding?** Look beyond colours, logos and reputation. If there is no supported pattern, say so.
 
-1. **What is the particular bet here?**
-   Name the choice the work commits to that a competent alternative might reject. If no bet is visible, identify where category conventions have replaced judgment.
+## Test the proposed lesson
 
-2. **Where is the charge, and what contains it?**
-   Locate the tension, surprise, desire, friction, or asymmetry that gives the work energy. Then identify the structure, restraint, hierarchy, pacing, or boundary that keeps the energy legible.
+Summarise one choice that helped and one choice worth revising. Do not average the answers into a score or presume they reveal the user's personality.
 
-3. **What proves this is real?**
-   Point to residue of contact with reality: a concrete detail, constraint, tested interaction, quoted voice, consequential learner action, imperfection, or evidence-bearing decision. Distinguish proof from polish.
+If the evidence suggests a preference, name the preference, the specific feature involved and the context in which it helped. Compare it with an approved earlier note when available. An older note may call a similar idea `charged specificity`; describe its proposed meaning plainly rather than repeating the phrase as an explanation.
 
-4. **What have I over-explained?**
-   Find the place where explanation removes discovery, ambiguity, trust, or participation. State what can be cut, delayed, or converted into an experience without losing necessary comprehension.
+Look for a counterexample: an example the user likes despite lacking the feature, an example they dislike despite having it, or another explanation that fits the evidence better. Ask whether the proposed lesson can guide a future decision. If it cannot yet, retain it as an unresolved observation. Narrow a lesson when it only holds in one context.
 
-5. **Would I recognise this with the logo removed?**
-   Test whether the work has a recognizable pattern of choice beyond branding. Name the signature if it exists; if recognition depends on colors, labels, or reputation alone, say so.
+## Keep private comparisons limited
 
-## Synthesize without canonizing
+Include a private preference only when the user supplied it for this comparison. Do not introduce intimate material, infer diagnoses or causes, generalise about a class of people, or use a private preference to explain professional choices. Lasting or public records require explicit approval.
 
-Convert the answers into one sentence that names the artifact's living choice and one sentence that names what deadens it. Do not average the five answers into a score.
+## Include in the study
 
-Use `charged specificity` only as a working hypothesis:
-
-> The user may prefer forms with a particular, evidence-bearing choice whose charge is held by deliberate containment.
-
-That sentence is an example of the shape a hypothesis should take, not a claim about anyone. Write the one the evidence in front of you actually supports, in the same form: a named preference, the quality that carries it, and the thing that holds it in place. If `meditations.md` already contains a confirmed claim, test that one rather than inventing a fresh one.
-
-Try to disprove or narrow it before carrying it forward:
-
-- Find an admired example that is generic, frictionless, fully explained, or emotionally cool.
-- Find a disliked example that is highly specific, charged, imperfect, or visibly authored.
-- Ask whether another principle explains the preference better on this surface.
-- Check whether the proposed pattern predicts a future choice rather than merely redescribing past examples.
-
-If a counterexample succeeds, keep the narrower surface-specific rule. If evidence remains mixed, retain the pattern as `interesting residue` rather than doctrine.
-
-## Apply the private boundary
-
-The user may bring a private preference into the comparison. If they do, restrict it to what they supplied and to structural contrasts such as restraint, specificity, tension, or recognizability.
-
-Do not infer causes, diagnoses, or intimate facts. Do not make a claim about any class of people from an individual preference. Do not use a private preference to explain professional taste, and do not move it into a persisted record or any public surface without the user's explicit approval for that transfer.
-
-Never introduce this surface yourself. It enters the comparison only when the user brings it.
-
-## Return the review result
-
-Include:
-
-- the particular bet;
-- the charged element and its container;
-- the strongest evidence of reality;
-- the first cut or delayed explanation;
-- the recognizable signature, or its absence;
-- one falsifier or counterexample;
-- one next artifact-level experiment.
+Explain the deliberate choice, what made it understandable, its strongest evidence, one possible revision and any supported pattern. Include a counterexample and a small experiment involving the work. Write these as a coherent explanation instead of displaying the review's internal questions as a checklist.

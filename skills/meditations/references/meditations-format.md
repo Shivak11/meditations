@@ -1,72 +1,32 @@
-# The meditations file
+# The optional lasting record
 
-`meditations.md` lives in the working directory. It is written for the user to
-reread, not for an audience and not for a machine. Keep it readable top to
-bottom as a document, and let the structure serve that rather than the reverse.
+`meditations.md` contains notes the user has explicitly approved. In a coding agent, it normally sits in the working directory. In Claude Chat, offer it as a download after approval. It is separate from the HTML study produced by default.
 
-It starts empty. It grows only by approval.
+## An entry
 
-## The entry
+The following is an illustrative format, not a record of a real user's session:
 
 ```markdown
-## 2026-09-07 · The chart that argued
+## 2026-09-11 · Explain the comparison before naming the technique
 
-**Claim.** Charts earn their place by settling a question, not by covering a
-variable. Where a chart shows a variable nobody is deciding about, cut it.
+**Claim.** When explaining a file comparison to a beginner, show which contents
+are compared and what the result means before relying on a technical label.
 
 - **Status:** confirmed
-- **From:** the awards dashboard, three visual variants of one decision
-- **Evidence:** observed. Three builds of the same data recommended three
-  different actions, and the difference tracked what each layout put first.
-- **Confidence:** medium. One artifact, one domain.
-- **What would change it:** a case where an apparently decorative chart turned
-  out to carry the decision.
+- **From:** a worked file-comparison example
+- **Evidence:** observed. The revised explanation included the inputs and the result.
+- **Confidence:** medium. The revision was inspected, but beginner comprehension was not tested.
+- **What would change it:** a reader test showing that the shorter explanation is equally clear.
 ```
 
-Five fields, and every one of them is doing work.
+Use `confirmed`, `rejected`, `narrowed` or `retired` for status. Identify the work so the claim can be re-examined. Distinguish observed evidence, the user's statement and inference. Explain confidence in plain language and include what would change the conclusion. Do not equate an approved note with empirical proof.
 
-- **Status** is `confirmed`, `rejected`, `narrowed`, or `retired`.
-- **From** names the artifact or session, so the claim can be re-examined.
-- **Evidence** is labelled `observed`, `stated`, or `inferred`. Never blur them.
-- **Confidence** is `high`, `medium` or `low`, and says what it rests on.
-- **What would change it** is required. A claim with no falsifier is a slogan.
+## Rejections and revisions
 
-## Record the rejections
+If the user rejects a proposed finding, ask whether to retain the rejection and its reason. Preserve their words accurately after approval. A rejection does not itself authorise saving anything.
 
-A `rejected` entry is worth more than a confirmed one, because nothing else the
-user keeps holds what they turned down. Write the reason in their words.
+When a new finding conflicts with an existing note, propose narrowing or retiring the old note. Do not silently overwrite it or add another incompatible rule. Keep entries in date order, newest last, and retain the context and uncertainty needed to understand them later. Do not summarise the notes into a psychological profile.
 
-```markdown
-## 2026-09-12 · Restraint is not the through-line
+## Approval
 
-**Claim.** Restraint explains the preference across writing and interface work.
-
-- **Status:** rejected
-- **From:** proposed after the dashboard run, tested against three teaching decks
-- **Evidence:** stated. "The teaching stuff is loud on purpose and I like it
-  loud. Restraint is a writing rule, not a me rule."
-- **Confidence:** n/a
-- **What this narrows:** the earlier claim now applies to written work only.
-```
-
-## Rules for maintaining it
-
-- Never write an entry the user has not approved in this run.
-- Never copy a line out of a global instruction file into this file. Only what
-  the user confirmed in their own words belongs here.
-- Never silently stack a contradiction. When a new finding disagrees with an
-  existing entry, propose narrowing or retiring the old one and let the user
-  decide. Two confident opposites in one file destroy its value.
-- Keep entries in date order, newest last, so it reads as a developing account
-  rather than a ranked list.
-- Do not summarise the file into a profile. The point is the reasoning, and a
-  profile is what remains after the reasoning is thrown away.
-
-## What it is for
-
-On the next run, read it first. It is the accumulated context that makes run
-forty sharper than run one.
-
-It is also the artifact. Someone who has run this twenty times has a readable
-document of how their own judgment moved, with the evidence attached and the
-rejections intact. Very few people have that about themselves.
+Before any write, propose the exact content, destination, visibility and scope. Write only what the user authorises. Never copy a standing instruction or include credentials, private paths or client details. Creating the requested HTML study does not depend on approval to save these lasting notes.

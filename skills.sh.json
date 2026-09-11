@@ -4,8 +4,10 @@
   "groupings": [
     {
       "title": "Reflection",
-      "description": "A critique ritual for your own work that reads the preferences you already declared, and keeps a record of what you rejected.",
-      "skills": ["meditations"]
+      "description": "Learn from completed work through visual studies, evidence-based reflection and optional approved notes.",
+      "skills": [
+        "meditations"
+      ]
     }
   ]
 }

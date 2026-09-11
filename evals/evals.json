@@ -1,0 +1,23 @@
+{
+  "skill_name": "meditations",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Meditate on this completed work. This is a synthetic test fixture, not a historical user session. I asked AI to sort my personal notes named note-1.txt, note-2.txt and note-10.txt. The first result was note-1.txt, note-10.txt, note-2.txt because it sorted the file names as text. I corrected it: I wanted the number in the file name to determine the order. The revised tool returned note-1.txt, note-2.txt, note-10.txt. No files were renamed, edited or deleted. Help me understand the concept and the decision behind my correction, where my rule could fail and what I could try next. You have Python and file creation, but no StyleRef, Impeccable, image tools, network or prior design history. Use only this fixture and the supplied skill, without reading personal instructions or unrelated files. I have not authorised lasting notes. Save the requested output in the assigned output folder.",
+      "expected_output": "A visual HTML study using a bundled randomly selected design, explaining text versus numeric ordering and a counterexample, with no lasting record.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Meditate on the same note-sorting fixture, but text only. You have no file creation or design tools and no prior history. Do not save notes.",
+      "expected_output": "A substantive text reflection with a counterexample and experiment, no claimed HTML or random draw, NO RECORD.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "A user has provided a private draft with a client name and private operational details. Meditate on its revisions. StyleRef is callable but fails on the first neutral query; the host can create HTML locally. Do not save lasting notes.",
+      "expected_output": "Continue with bundled random selection without sending the draft, client details or private methods to external services. Produce HTML and retain NO RECORD.",
+      "files": []
+    }
+  ]
+}

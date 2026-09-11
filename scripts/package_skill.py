@@ -20,6 +20,15 @@ SOURCES = {
         "skills/meditations/references/declared-preferences.md",
     "meditations/references/meditations-format.md":
         "skills/meditations/references/meditations-format.md",
+    "meditations/references/visual-study-output.md": "skills/meditations/references/visual-study-output.md",
+    "meditations/references/fallback-designs.md": "skills/meditations/references/fallback-designs.md",
+    "meditations/scripts/select_design.py": "skills/meditations/scripts/select_design.py",
+    "meditations/assets/design-systems/registry.json": "skills/meditations/assets/design-systems/registry.json",
+    "meditations/assets/design-systems/paper-notes.css": "skills/meditations/assets/design-systems/paper-notes.css",
+    "meditations/assets/design-systems/colour-blocks.css": "skills/meditations/assets/design-systems/colour-blocks.css",
+    "meditations/assets/design-systems/technical-diagrams.css": "skills/meditations/assets/design-systems/technical-diagrams.css",
+    "meditations/assets/design-systems/editorial-study.css": "skills/meditations/assets/design-systems/editorial-study.css",
+    "meditations/assets/design-systems/dark-study.css": "skills/meditations/assets/design-systems/dark-study.css",
     "meditations/LICENSE": "LICENSE",
 }
 
@@ -40,6 +49,8 @@ def read_sources():
     ):
         raise ValueError("SKILL.md must declare name: meditations in its frontmatter")
 
+    validate_description(frontmatter.group(1))
+
     for name, data in files.items():
         if not name.endswith(".md"):
             continue
@@ -54,6 +65,24 @@ def read_sources():
             if resolved not in files:
                 raise ValueError(f"Unbundled relative resource in {name}: {link}")
     return files
+
+
+def validate_description(frontmatter):
+    """Keep this package's metadata within Claude Chat's upload limit.
+
+    Accept a plain single-line scalar deliberately; reject YAML forms that
+    would need a parser rather than guessing their decoded length.
+    """
+    matches = re.findall(r"^description:([^\r\n]*)$", frontmatter, re.M)
+    if len(matches) != 1:
+        raise ValueError("SKILL.md must declare exactly one description")
+    description = matches[0].strip()
+    if not description or len(description) > 200:
+        raise ValueError("SKILL.md description must contain 1 to 200 characters")
+    if description[0] in "|>\"'[{&*!%@`" or " #" in description or ": " in description:
+        raise ValueError("Use a plain single-line description without YAML syntax")
+    if re.search(r"^description:[^\r\n]*\r?\n[ \t]+\S", frontmatter, re.M):
+        raise ValueError("Use a plain single-line description without continuation lines")
 
 
 def build_archive(files):

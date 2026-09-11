@@ -1,3 +1,4 @@
 node_modules/
 .DS_Store
 *.svg.png
+__pycache__/

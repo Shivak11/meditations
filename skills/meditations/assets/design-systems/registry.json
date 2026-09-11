@@ -1,0 +1,412 @@
+{
+  "version": 1,
+  "systems": [
+    {
+      "id": "paper-notes",
+      "name": "Paper notes",
+      "kinds": [
+        "comparison",
+        "concept",
+        "decision"
+      ],
+      "brief": "Use Georgia for sustained reading with clear sans-serif headings on warm white. Keep a continuous reading column, adding an occasional margin note only where it changes the interpretation. Draw comparisons with fine rules and open nodes; write the relationship beside the connector.",
+      "typography": "serif-body-sans-headings",
+      "layout": "continuous-reading-with-margin-notes",
+      "diagram": "fine-rules-open-nodes",
+      "css": "assets/design-systems/paper-notes.css",
+      "text_contrast_pairs": [
+        [
+          "--ink",
+          "--page"
+        ],
+        [
+          "--ink",
+          "--surface"
+        ],
+        [
+          "--ink",
+          "--accent-soft"
+        ],
+        [
+          "--muted",
+          "--page"
+        ],
+        [
+          "--muted",
+          "--surface"
+        ],
+        [
+          "--muted",
+          "--accent-soft"
+        ],
+        [
+          "--accent",
+          "--page"
+        ],
+        [
+          "--accent",
+          "--surface"
+        ],
+        [
+          "--accent",
+          "--accent-soft"
+        ],
+        [
+          "--on-accent",
+          "--accent"
+        ]
+      ],
+      "nontext_contrast_pairs": [
+        [
+          "--line",
+          "--page"
+        ],
+        [
+          "--line",
+          "--surface"
+        ],
+        [
+          "--line",
+          "--accent-soft"
+        ],
+        [
+          "--accent",
+          "--page"
+        ],
+        [
+          "--accent",
+          "--surface"
+        ]
+      ]
+    },
+    {
+      "id": "colour-blocks",
+      "name": "Colour blocks",
+      "kinds": [
+        "comparison",
+        "process",
+        "decision"
+      ],
+      "brief": "Use large system-sans headings and broad coloured regions for the actual comparison or progression. Keep related examples aligned and use numbered steps when order matters. Pale blue and teal regions must have written labels; use open reading space between the regions rather than repeating cards.",
+      "typography": "bold-system-sans",
+      "layout": "broad-comparison-bands",
+      "diagram": "labelled-regions-numbered-steps",
+      "css": "assets/design-systems/colour-blocks.css",
+      "text_contrast_pairs": [
+        [
+          "--ink",
+          "--page"
+        ],
+        [
+          "--ink",
+          "--surface"
+        ],
+        [
+          "--ink",
+          "--accent-soft"
+        ],
+        [
+          "--muted",
+          "--page"
+        ],
+        [
+          "--muted",
+          "--surface"
+        ],
+        [
+          "--muted",
+          "--accent-soft"
+        ],
+        [
+          "--accent",
+          "--page"
+        ],
+        [
+          "--accent",
+          "--surface"
+        ],
+        [
+          "--accent",
+          "--accent-soft"
+        ],
+        [
+          "--on-accent",
+          "--accent"
+        ],
+        [
+          "--ink",
+          "#e0eee9"
+        ],
+        [
+          "--muted",
+          "#e0eee9"
+        ],
+        [
+          "--accent",
+          "#e0eee9"
+        ]
+      ],
+      "nontext_contrast_pairs": [
+        [
+          "--line",
+          "--page"
+        ],
+        [
+          "--line",
+          "--surface"
+        ],
+        [
+          "--line",
+          "--accent-soft"
+        ],
+        [
+          "--accent",
+          "--page"
+        ],
+        [
+          "--accent",
+          "--surface"
+        ],
+        [
+          "--line",
+          "#e0eee9"
+        ]
+      ]
+    },
+    {
+      "id": "technical-diagrams",
+      "name": "Technical diagrams",
+      "kinds": [
+        "process",
+        "concept",
+        "decision"
+      ],
+      "brief": "Use readable system-sans prose and monospace headings on a cool white page. Organise the main figure around aligned inputs, operations and results, with square nodes and explicit connector labels. Place supporting prose below the relevant stage; reserve tables for real comparisons.",
+      "typography": "sans-body-mono-headings",
+      "layout": "ruled-figure-and-aligned-stages",
+      "diagram": "square-nodes-labelled-edges",
+      "css": "assets/design-systems/technical-diagrams.css",
+      "text_contrast_pairs": [
+        [
+          "--ink",
+          "--page"
+        ],
+        [
+          "--ink",
+          "--surface"
+        ],
+        [
+          "--ink",
+          "--accent-soft"
+        ],
+        [
+          "--muted",
+          "--page"
+        ],
+        [
+          "--muted",
+          "--surface"
+        ],
+        [
+          "--muted",
+          "--accent-soft"
+        ],
+        [
+          "--accent",
+          "--page"
+        ],
+        [
+          "--accent",
+          "--surface"
+        ],
+        [
+          "--accent",
+          "--accent-soft"
+        ],
+        [
+          "--on-accent",
+          "--accent"
+        ]
+      ],
+      "nontext_contrast_pairs": [
+        [
+          "--line",
+          "--page"
+        ],
+        [
+          "--line",
+          "--surface"
+        ],
+        [
+          "--line",
+          "--accent-soft"
+        ],
+        [
+          "--accent",
+          "--page"
+        ],
+        [
+          "--accent",
+          "--surface"
+        ]
+      ]
+    },
+    {
+      "id": "editorial-study",
+      "name": "Editorial study",
+      "kinds": [
+        "comparison",
+        "concept",
+        "decision"
+      ],
+      "brief": "Use large Georgia headings with system-sans body text on warm white. Build the explanation in a narrow continuous column and give the principal figure a wider span. Prefer one substantial relationship diagram with a full caption; use open comparison columns and sparse side notes.",
+      "typography": "sans-body-serif-headings",
+      "layout": "narrow-reading-wide-figures",
+      "diagram": "large-central-relationship-figure",
+      "css": "assets/design-systems/editorial-study.css",
+      "text_contrast_pairs": [
+        [
+          "--ink",
+          "--page"
+        ],
+        [
+          "--ink",
+          "--surface"
+        ],
+        [
+          "--ink",
+          "--accent-soft"
+        ],
+        [
+          "--muted",
+          "--page"
+        ],
+        [
+          "--muted",
+          "--surface"
+        ],
+        [
+          "--muted",
+          "--accent-soft"
+        ],
+        [
+          "--accent",
+          "--page"
+        ],
+        [
+          "--accent",
+          "--surface"
+        ],
+        [
+          "--accent",
+          "--accent-soft"
+        ],
+        [
+          "--on-accent",
+          "--accent"
+        ]
+      ],
+      "nontext_contrast_pairs": [
+        [
+          "--line",
+          "--page"
+        ],
+        [
+          "--line",
+          "--surface"
+        ],
+        [
+          "--line",
+          "--accent-soft"
+        ],
+        [
+          "--accent",
+          "--page"
+        ],
+        [
+          "--accent",
+          "--surface"
+        ]
+      ]
+    },
+    {
+      "id": "dark-study",
+      "name": "Dark study",
+      "kinds": [
+        "comparison",
+        "process",
+        "concept",
+        "decision"
+      ],
+      "brief": "Use light system-sans text on charcoal with a restrained mint accent. Let outlined groups show the boundaries between ideas and use stronger strokes for a changed or selected state. Keep generous spacing around a principal diagram and explain the change in continuous prose; avoid glows and decorative terminal motifs.",
+      "typography": "soft-weight-system-sans",
+      "layout": "open-reading-outlined-groups",
+      "diagram": "outlined-boundaries-emphasised-state",
+      "css": "assets/design-systems/dark-study.css",
+      "text_contrast_pairs": [
+        [
+          "--ink",
+          "--page"
+        ],
+        [
+          "--ink",
+          "--surface"
+        ],
+        [
+          "--ink",
+          "--accent-soft"
+        ],
+        [
+          "--muted",
+          "--page"
+        ],
+        [
+          "--muted",
+          "--surface"
+        ],
+        [
+          "--muted",
+          "--accent-soft"
+        ],
+        [
+          "--accent",
+          "--page"
+        ],
+        [
+          "--accent",
+          "--surface"
+        ],
+        [
+          "--accent",
+          "--accent-soft"
+        ],
+        [
+          "--on-accent",
+          "--accent"
+        ]
+      ],
+      "nontext_contrast_pairs": [
+        [
+          "--line",
+          "--page"
+        ],
+        [
+          "--line",
+          "--surface"
+        ],
+        [
+          "--line",
+          "--accent-soft"
+        ],
+        [
+          "--accent",
+          "--page"
+        ],
+        [
+          "--accent",
+          "--surface"
+        ]
+      ]
+    }
+  ]
+}

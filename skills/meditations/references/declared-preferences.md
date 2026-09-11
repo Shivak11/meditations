@@ -1,83 +1,33 @@
-# Reading what the user has already declared
+# Read available preferences
 
-People who work with coding agents keep a file telling those agents how they
-like things done. That file is a declaration of preference rather than a record
-of activity, which makes it the best cold-start evidence available.
+Use preferences that the user has supplied or that the current coding agent is authorised to read. Treat them as evidence about a stated preference, not as proof of a stable trait or universal rule. Continue when no preferences are available.
 
-Read it. Do not persist it.
+## Available sources
 
-## Where to look, in priority order
+In Claude Chat, use the conversation, supplied preferences and attachments. Its code-execution environment is not the user's computer. Installing the skill does not grant access to other apps or conversations.
 
-The paths below apply when running in a coding agent with authorised access to the user's files. In Claude Chat, use the conversation, supplied preferences and attachments instead. Do not treat its code-execution sandbox as the user's computer or imply that the skill can retrieve preferences from another app. Continue if no preferences were supplied.
+In a coding agent, read relevant existing sources within the host's permissions:
 
-| Source | Path | Note |
-|---|---|---|
-| This skill's own record | `./meditations.md` | Strongest. Every line was confirmed by the user |
-| Claude Code, global | `~/.claude/CLAUDE.md` | Usually the longest and most developed |
-| Claude Code, project | `./CLAUDE.md` | Scoped to the current work |
-| Codex, global | `~/.codex/AGENTS.md` | |
-| Cross-tool convention | `./AGENTS.md`, `~/.agents/AGENTS.md` | Increasingly the shared standard |
-| Cursor | `~/.cursor/AGENTS.md`, `~/.cursor/rules/*.mdc`, `./.cursor/rules/*.mdc` | |
-| Gemini CLI | `~/.gemini/GEMINI.md` | Often present but empty |
-| OpenCode | `~/.config/opencode/AGENTS.md` | |
+| Source | Location |
+|---|---|
+| Approved Meditations notes | An attached or local `meditations.md` |
+| Current project instructions | `AGENTS.md`, `CLAUDE.md` and relevant existing agent rules |
+| Global Claude instructions | `~/.claude/CLAUDE.md` |
+| Global Codex instructions | `~/.codex/AGENTS.md` |
+| Other available agent instructions | Authorised Cursor, Gemini or OpenCode instructions when relevant |
 
-Read every one that exists. Skip the rest silently in the file system and name
-them plainly in the report.
+Prefer instruction content already loaded by the host. Do not scan unrelated directories, request new access simply to fill a preference history, or interpret a missing file as a problem. Ask once for missing context only when it materially affects the reflection.
 
-**Another app's saved preferences are not local instruction files.** If the
-user wants those preferences included and they are not available in the current
-context, offer once: "paste the relevant preferences and I will include them in
-this run". Never ask twice, and never treat their absence as a gap in the
-reflection.
+## Separate preferences from configuration
 
-## Separating preference from plumbing
+Keep preferences about language, evidence, completion standards, delegated decisions and the work itself. Exclude credentials, endpoints, tool configuration, private paths, client names and operational rules. A technical example inside a language preference does not establish a fact about the user's systems.
 
-Most of a global instruction file is configuration. Perhaps a quarter is taste.
-Extract only the second kind.
+Apply extracted preferences within the current run. Do not copy lines from standing instructions into the HTML, reply, source metadata or `meditations.md`. Describe a relevant preference in general terms only when it helps the reflection. Lasting notes should use the wording and scope the user explicitly approves.
 
-**Preference, keep:**
+## Handle apparent contradictions
 
-- How they want things said. Register, tone, banned constructions, sentence rules.
-- What they consider finished. Proof standards, what counts as evidence.
-- What they refuse. Named anti-patterns, words they will not read, shapes they reject.
-- Where their judgment sits. Which decisions they insist on making, which they delegate.
-- Stated values about the work itself.
+Different instructions may apply to different tasks. Describe the apparent difference without exposing private text or file paths, then check whether context explains it. Ask which preference applies when the answer affects this work. Do not assume that a difference between files reveals an unsettled personality trait.
 
-**Plumbing, discard:**
+## State the evidence scope
 
-- Tool paths, CLI names, install commands, environment variables.
-- API endpoints, worker URLs, database references, credentials, rotation notes.
-- MCP server names and configuration.
-- Repository layouts and directory conventions.
-- Client-specific or product-specific business rules.
-
-A line can be both. "Say the same tap could charge twice, not the endpoint is
-not idempotent" is a register rule that happens to contain a technical term.
-Keep the rule, drop nothing, and do not treat the example as a fact about their
-systems.
-
-## What must never leave the run
-
-- Never write a line copied from a global instruction file into `meditations.md`.
-- Never quote one into an artifact, a summary, or anything the user might share.
-- Never surface a credential, endpoint, path, or client name that came from one,
-  even when the user asks what you found. Describe the preference, not the file.
-
-The extracted preferences live in this run and end with it. Only what the user
-confirms in their own words reaches `meditations.md`.
-
-## Contradictions are the finding
-
-When two files disagree, report it. Someone who told one tool to stay terse and
-another to show its reasoning has an unsettled preference and does not know it,
-because nobody diffs these files.
-
-State both instructions, name which file each came from, and ask which one
-still holds. A resolved contradiction is a strong first entry, and it gives the
-first run something real to say before any history exists.
-
-## Reporting what you read
-
-Open the run with one line naming the sources found and the sources absent. Be
-exact. A reflection that implies more knowledge than its sources supplied is
-the failure this whole ritual exists to prevent.
+Briefly identify the kinds of evidence available, such as the current conversation, attached work or approved notes. Mention a missing source only when its absence limits a conclusion. Never imply access the host did not provide.

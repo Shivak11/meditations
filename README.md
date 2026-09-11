@@ -17,8 +17,8 @@ After a working session, paste:
 
 ```text
 Use Meditations to review the work we just did and create a visual HTML study.
-Explain the important concepts through the decisions and corrections we made.
-Show where one takeaway might fail and give me a small experiment for next time.
+Group the actual topics. For each, state the principle, briefly recall how it arose,
+and show one concrete application. Keep each concept within one readable printed page.
 Use only the conversation and files available here. Ask before saving lasting notes.
 ```
 
@@ -38,9 +38,9 @@ Then ask it to **“meditate on this”** and identify the work to review. The t
 
 ## What you receive
 
-The study explains a small number of consequential decisions from the available work. It pays particular attention to your corrections and assumptions, shows an example or diagram where useful, tests one lesson against a counterexample and proposes a small experiment.
+The study opens with a direct session summary. Each topic states its principle immediately, briefly recalls the question or correction that produced it, and shows one concrete application. Distinct topics stay together in their own sections. Each concept fits within one readable A4 page, with the opening included on the first page. Counterexamples and next experiments appear when they add something useful.
 
-For example, suppose you asked AI to organise files named `note-2.txt` and `note-10.txt`. A text-based sort can place `note-10.txt` first because it compares the first differing character. A study could let you predict the order, explain the difference between text and numeric sorting, and test when that distinction matters. This is an illustrative use case; it is not a claim about a session the skill observed.
+For example, suppose you asked AI to organise files named `note-2.txt` and `note-10.txt`. A text-based sort can place `note-10.txt` first because it compares the first differing character. The principle would be to compare the number when it represents the intended order. A short comparison of the two resulting lists makes the difference visible. This is an illustrative use case; it is not a claim about a session the skill observed.
 
 The default output is one self-contained HTML file with readable text and topic-related visuals. Interactions are included when they help explain the concept. The essential explanation remains readable without JavaScript, and the file supports printing. Generating the study needs an agent that can create files. If that is unavailable, Meditations gives a text reflection and says that it could not create HTML.
 
@@ -68,7 +68,7 @@ An authorised coding agent can also use relevant project instructions and approv
 
 ## Lasting notes are optional
 
-The HTML study is the requested output. A separate `meditations.md` record receives an entry only after you approve its exact content and destination. Every run starts at `NO RECORD`; reflection alone does not authorise a wiki update, memory change, hook installation or publication.
+The HTML study is the requested output. A separate `meditations.md` record receives an entry only after you approve its exact content and destination. Reflection alone does not authorise a wiki update, memory change, hook installation or publication. The agent keeps its recording state privately and tells you plainly when something has been saved.
 
 The record can preserve a confirmed lesson, a rejection or a narrower replacement for an earlier conclusion. Each entry includes its evidence, uncertainty and what would change it. In Claude Chat, save the approved record as a download and attach it when you want to use it in a later conversation. The skill does not synchronise notes across chats.
 

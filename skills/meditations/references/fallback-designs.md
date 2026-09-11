@@ -40,6 +40,8 @@ The catalogue is in [registry.json](../assets/design-systems/registry.json). Ada
 
 ## HTML primitives
 
+The topic sequence and one-readable-A4-page limit in [reflection-format.md](reflection-format.md) take precedence over any layout default below. Use these primitives within each concept page. Adapt the selected CSS print rules to the complete content, including a suitable A4 size, readable print type and breaks before later concepts. The CSS alone cannot guarantee page fit.
+
 Include `<meta name="viewport" content="width=device-width, initial-scale=1">`. Use one `<main class="study">`, with a plain `<h1>`, a sentence explaining the study, and the actual content. `.reading` limits long prose to a readable line length; `.lead` marks the opening explanation. `.wide` gives a figure more room where the system supports it. `.with-note` can wrap a reading section and an occasional `<aside class="note">`.
 
 `.comparison` places two related sections beside one another on wider screens and stacks them on small screens. `.sequence` is intended for an ordered list whose list items represent actual steps. `.diagram` frames a figure; `.node` and `.connector` style elements in an inline SVG. `.node` sets SVG fill and stroke, so use `.diagram-node` for a node made from HTML. Set an SVG's `viewBox` to fit the content and provide a title and description with `aria-labelledby`. Keep SVG text large enough at the rendered width; recompose dense diagrams for mobile instead of shrinking the labels.

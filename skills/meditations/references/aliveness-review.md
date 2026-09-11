@@ -12,7 +12,7 @@ This is the Aliveness Review used by the `artifact` and `taste` modes. Keep the 
 
 ## Test the proposed lesson
 
-Summarise one choice that helped and one choice worth revising. Do not average the answers into a score or presume they reveal the user's personality.
+Identify which choices helped and whether a revision would be useful; do not invent a defect to complete a pair. Do not average the answers into a score or presume they reveal the user's personality.
 
 If the evidence suggests a preference, name the preference, the specific feature involved and the context in which it helped. Compare it with an approved earlier note when available. An older note may call a similar idea `charged specificity`; describe its proposed meaning plainly rather than repeating the phrase as an explanation.
 
@@ -24,4 +24,4 @@ Include a private preference only when the user supplied it for this comparison.
 
 ## Include in the study
 
-Explain the deliberate choice, what made it understandable, its strongest evidence, one possible revision and any supported pattern. Include a counterexample and a small experiment involving the work. Write these as a coherent explanation instead of displaying the review's internal questions as a checklist.
+Use [reflection-format.md](reflection-format.md): keep each actual topic together, state its principle immediately, recall the specific evidence that produced it and show one concrete application. Select the review findings that explain that principle. A counterexample, revision or next experiment belongs in the study only when it adds something specific; no mandatory extra section or checklist is required. Preserve material limits in ordinary language.

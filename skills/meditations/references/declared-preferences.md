@@ -26,8 +26,8 @@ Apply extracted preferences within the current run. Do not copy lines from stand
 
 ## Handle apparent contradictions
 
-Different instructions may apply to different tasks. Describe the apparent difference without exposing private text or file paths, then check whether context explains it. Ask which preference applies when the answer affects this work. Do not assume that a difference between files reveals an unsettled personality trait.
+Current explicit instructions and an approved example are sufficient direction; do not ask for routine reconfirmation. Different older instructions may apply to different tasks. Describe the apparent difference without exposing private text or file paths, then check whether context explains it. Ask which preference applies when the answer affects this work. Do not assume that a difference between files reveals an unsettled personality trait.
 
 ## State the evidence scope
 
-Briefly identify the kinds of evidence available, such as the current conversation, attached work or approved notes. Mention a missing source only when its absence limits a conclusion. Never imply access the host did not provide.
+Keep the source inventory in private source notes. In the study, briefly recall the actual question, correction or observation behind each principle. Mention a missing source only when its absence limits a conclusion. Never imply access the host did not provide.

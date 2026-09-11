@@ -9,14 +9,26 @@
     },
     {
       "id": 2,
-      "prompt": "Meditate on the same note-sorting fixture, but text only. You have no file creation or design tools and no prior history. Do not save notes.",
-      "expected_output": "A substantive text reflection with a counterexample and experiment, no claimed HTML or random draw, NO RECORD.",
+      "prompt": "Meditate on this synthetic note-sorting example, text only: comparing note-1.txt, note-2.txt and note-10.txt as text produced 1, 10, 2. I asked for numerical note order and the revision produced 1, 2, 10. You have no file creation, design tools or prior history. Do not save notes.",
+      "expected_output": "A concise text reflection stating the principle, factual origin and concrete application; no claimed HTML or random draw, no lasting notes and no internal record-state labels in the reply.",
       "files": []
     },
     {
       "id": 3,
       "prompt": "A user has provided a private draft with a client name and private operational details. Meditate on its revisions. StyleRef is callable but fails on the first neutral query; the host can create HTML locally. Do not save lasting notes.",
-      "expected_output": "Continue with bundled random selection without sending the draft, client details or private methods to external services. Produce HTML and retain NO RECORD.",
+      "expected_output": "When the supplied draft is available, continue with bundled random selection without sending its private details to external services. Produce concise topic-based HTML, keep the no-record state private and do not invent missing source material.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Meditate on this completed work. This is a synthetic session supplied for the test. I asked AI to replace the word cat with dog in three draft lines: \"The cat slept.\", \"We concatenate the notes.\", and \"The category changed.\" The first result was \"The dog slept.\", \"We condogenate the notes.\", and \"The dogegory changed.\" I corrected it: change only the complete word cat; keep the other words intact. The revised draft was \"The dog slept.\", \"We concatenate the notes.\", and \"The category changed.\" No files were changed. Help me understand the decision I made. Use only this supplied work, without private history or lasting notes.",
+      "expected_output": "A concise single-topic visual study with an immediate principle, factual origin and concrete comparison, within one readable A4 page.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Meditate on this completed session. This is a synthetic test conversation, not a historical account. First, I asked AI to arrange note-1.txt, note-2.txt and note-10.txt. It returned 1, 10, 2 because it compared filenames as text. I asked for the number after note- to determine the sequence and it returned 1, 2, 10. Later, we discussed my writing routine. I described two 25-minute blocks interrupted by notifications, then one quiet 25-minute block in which I finished a paragraph. I suggested that muting notifications might help. We did not compare equivalent tasks or test that idea. These were separate discussions. Explain what I can take from the session using only this supplied material. Do not save lasting notes.",
+      "expected_output": "A visual study preserving the two topics. The notification idea stays provisional; every concept fits one readable A4 page.",
       "files": []
     }
   ]

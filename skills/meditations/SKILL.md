@@ -5,7 +5,7 @@ description: Learn from completed work through a visual HTML study. Use for medi
 
 # Meditations
 
-Review completed work to understand its decisions and identify a useful next experiment. Produce a visual HTML study by default, following [references/visual-study-output.md](references/visual-study-output.md). StyleRef and Impeccable are optional; five bundled design systems support users who have neither.
+Review completed work to make its useful principles concrete and easy to recall. Produce a visual HTML study by default, following [references/visual-study-output.md](references/visual-study-output.md). Begin with a direct session summary. For each actual topic, state the principle immediately, briefly explain how it emerged, then show one concrete application. Follow [references/reflection-format.md](references/reflection-format.md); each concept fits within one readable A4 page. StyleRef and Impeccable are optional; five bundled design systems support users who have neither.
 
 The study is the requested output. A separate, lasting record called `meditations.md` gains an entry only when the user approves one. Creating a study does not authorise saving a preference, changing standing instructions or publishing anything.
 
@@ -15,7 +15,7 @@ In Claude Chat, use the current conversation, attachments and preferences availa
 
 Once per session, read [references/declared-preferences.md](references/declared-preferences.md). Use an attached or authorised local `meditations.md` when available. In a coding agent, use relevant standing instructions the host permits you to read. Keep extracted preferences within this run; do not copy configuration or private instruction text into the study.
 
-A stated preference can be old or specific to another situation. Distinguish it from an observed pattern. If two preferences appear inconsistent, describe the difference and consider whether different contexts explain it. Ask for clarification only when it affects this reflection. Continue usefully when there is no preference history.
+Apply a current explicit preference or approved example without asking the user to confirm it again. A stated preference can be old or specific to another situation. Distinguish it from an observed pattern. If two preferences appear inconsistent, describe the difference and consider whether different contexts explain it. Ask for clarification only when it affects this reflection. Continue usefully when there is no preference history.
 
 ## Establish the run
 
@@ -39,7 +39,9 @@ Inspect the available work directly. Pay particular attention to the user's corr
 
 Name material gaps in the evidence. Do not invent historical examples, personality explanations or measured improvements. A clearly labelled illustration can explain a concept but cannot prove what happened in the user's session. Prefer a few consequential findings over a list of every completed action.
 
-## Run the five Rs
+## Use the five Rs internally
+
+These steps guide reasoning. They do not set the study headings, topic count or length. Keep the related evidence, confidence and recording state in private source notes; include a qualification in the study only when it changes how the principle should be understood.
 
 ### 1. Review
 
@@ -53,7 +55,7 @@ When a finding conflicts with an approved note, propose narrowing or retiring th
 
 ### 3. Reinforce
 
-Choose a lesson specific enough to guide a future decision. Search for at least one counterexample or changed condition where it would fail. Explain the limit beside the lesson so the user can judge where to apply it.
+Choose a lesson specific enough to guide a future decision. Search for at least one counterexample or changed condition where it would fail. When a limit materially changes the lesson, explain it once beside the principle or application. Critical examination does not require a separate counterexample panel in every study. Keep a weakly supported proposal provisional.
 
 Distinguish a candidate for repeated use, a lesson limited to this task, and an unresolved observation. Test the proposed explanation against the evidence; persuasive wording is not evidence. If an older record uses `charged specificity` or `interesting residue`, interpret those terms plainly as, respectively, a proposed preference for specific consequential choices or an unresolved observation. Do not presume either pattern applies.
 
@@ -61,15 +63,15 @@ Distinguish a candidate for repeated use, a lesson limited to this task, and an 
 
 Keep lasting notes optional. `meditations.md` is the default record destination, governed by [references/meditations-format.md](references/meditations-format.md).
 
-When a record may help, propose the exact content, destination, visibility and scope. Explain whether it is evidence, a hypothesis or a proposed rule. Obtain explicit authorisation before writing it and remain at `PROPOSED RECORD` until approval arrives. Then write only the approved content and report `RECORDED` with its path.
+When a record may help, propose the exact content, destination, visibility and scope. Explain whether it is evidence, a hypothesis or a proposed rule. Obtain explicit authorisation before writing it and remain at `PROPOSED RECORD` until approval arrives. Then write only the approved content, verify it and set the private state to `RECORDED`. Tell the user what was saved and where in ordinary language.
 
 A rejection can also be useful evidence. Ask whether to record it and preserve the user's reason accurately if they approve. A request to meditate authorises the private study output; it does not authorise lasting notes, memory updates, wiki edits, changes to another skill or publication.
 
 ### 5. Resolve
 
-Finish when further reflection would add little. Deliver the HTML study and a short reply with the main lesson, next experiment and `NO RECORD`, `PROPOSED RECORD` or `RECORDED` verdict. If text was requested or file creation is unavailable, deliver the substantive reflection in chat and explain that no HTML file was created.
+Finish when the actual topics have been explained. Deliver the HTML link with one brief sentence describing what it covers. Communicate any actual recording decision plainly, such as “I have not saved lasting notes” when that distinction needs to be stated. Do not display internal record-state labels or a closing checklist. A next experiment is optional and stays within its topic when useful. If text was requested or file creation is unavailable, use the same concise topic sequence in chat and explain that no HTML file was created.
 
-Across the study and reply, make clear what work was reviewed, what supports the lesson, what remains uncertain and where the lesson might fail. Use ordinary connected prose. Keep internal phase names, source ledgers and design rationale outside the study. Do not repeat the full study in chat or keep questioning the user after delivery.
+Let the session summary, each principle's origin and its application establish what was reviewed and why the lesson follows. State only material uncertainty near the affected claim; do not repeat a generic caveat or evidence ledger. Use ordinary connected prose. Keep internal phase names, source ledgers and design rationale outside the study. Do not repeat the full study in chat or keep questioning the user after delivery.
 
 ## Maintain the boundaries
 

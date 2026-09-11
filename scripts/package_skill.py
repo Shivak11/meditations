@@ -20,6 +20,7 @@ SOURCES = {
         "skills/meditations/references/declared-preferences.md",
     "meditations/references/meditations-format.md":
         "skills/meditations/references/meditations-format.md",
+    "meditations/references/reflection-format.md": "skills/meditations/references/reflection-format.md",
     "meditations/references/visual-study-output.md": "skills/meditations/references/visual-study-output.md",
     "meditations/references/fallback-designs.md": "skills/meditations/references/fallback-designs.md",
     "meditations/scripts/select_design.py": "skills/meditations/scripts/select_design.py",

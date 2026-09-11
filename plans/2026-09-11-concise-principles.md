@@ -19,3 +19,13 @@ Generate fresh single-topic and multi-topic examples through the revised skills,
 ## Release
 
 Bump SHVA patch version and update relevant help/descriptions. Publish only the requested skill changes and related release material, without carrying unrelated unpublished integration work. Rebuild public meditations.zip at repository root. Refresh remote bases, push without force, read back commit/ZIP. Update the existing observation after source and installed behaviour are verified. Keep old caches as rollback, with only SHVA discoverable.
+
+## Verification completed
+
+Source and package review found no actionable issue. Public packaging and all 20 design/package tests pass. SHVA plugin and marketplace validation, YAML parsing, local references, matching 0.18.2 metadata and help descriptions pass.
+
+Fresh generation used a single-topic word-replacement session in SHVA and a two-topic filename-ordering/writing session in the public edition. The generated studies print to one and two readable A4 pages respectively, with correct topic-to-page mapping and the opening on the first page. The same fixtures under the previous skills produced two and five pages. The public new output received one documented revision to make its summary headline factual and simplify novice wording. This led to an explicit headline clarification in both format references.
+
+Both revised studies were inspected at 1440px, 390px and on every printed page. No horizontal overflow, remote requests or script errors were found; essential screen text is at least 18px and print body text is 12pt. The revised examples contain complete static comparisons and no interactive controls. Their explanations remain available with JavaScript disabled and motion reduction enabled. The notification idea remains provisional. Private source material was not copied into the public package.
+
+These are two constructed behavioural checks, not proof of improved learning or a general benchmark. Native Claude generation and upload were not tested. Source, rendered output, package, installation and publication are tracked separately.

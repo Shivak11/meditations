@@ -1,23 +1,18 @@
 ---
 name: meditations
 description: >-
-  Run a reflection and judgment ritual across a concrete artifact, a work
-  session, or patterns of taste. Use when the user says "/meditations",
-  "meditate on this", "reflect on this", "consolidate this session", "run the
-  Aliveness Review", asks what a draft or interface reveals about their taste,
-  or wants to decide what deserves to become durable memory. On the first run,
-  read the user's own global agent instruction files to learn the preferences
-  they have already declared. Apply the five Rs, preserve medium-specific
-  adapters and private boundaries, test charged specificity as a hypothesis,
-  and propose records without writing them until the user explicitly authorizes
-  the destination.
+  Reflect on work, decisions and taste. Use for "meditate on this", "/meditations",
+  "reflect on this", "consolidate this session", or "Aliveness Review".
+  Propose lessons and a next experiment.
 ---
 
 # Meditations
 
 Turn lived work into a sharper judgment without turning every preference into doctrine.
 
-The skill keeps one file, `meditations.md`, in the user's working directory. It starts empty. It gains an entry only when the user approves one. Over runs it becomes a readable record of how their judgment actually moves, written for them and not for an audience.
+In a coding agent, the skill keeps one file, `meditations.md`, in the user's working directory. It starts empty. It gains an entry only when the user approves one. Over runs it becomes a readable record of how their judgment actually moves, written for them and not for an audience.
+
+In Claude Chat, use the current conversation, attached files and preferences actually available in that context. The chat's code-execution environment is not the user's computer: do not search its home directory for the user's local agent instructions. If the user approves a record, offer `meditations.md` as a downloadable file. Explain that they can attach it in another conversation; do not claim that installing the skill synchronises records between chats.
 
 ## Phase 0: Read what the user has already declared
 
@@ -25,8 +20,8 @@ Run this once per session, before the first reflection. It solves the cold start
 
 Read `references/declared-preferences.md` and follow it. In short:
 
-1. Read `meditations.md` in the working directory if it exists. This is the strongest source, because every line in it was confirmed by the user.
-2. Read whichever global agent instruction files exist. These are the user's own standing instructions to their tools, so they are declared preference rather than inferred pattern.
+1. Read `meditations.md` if the user attached it or, in a coding agent, it exists in the working directory. This is the strongest source, because every line in it was confirmed by the user.
+2. In a coding agent with authorised file access, read whichever global agent instruction files exist. In Claude Chat, use only preferences available in the conversation. These are declared preferences rather than inferred patterns.
 3. Extract only preference. Discard configuration, credentials, paths, endpoints, and client-specific rules.
 4. State plainly which sources were found and which were absent. Never imply knowledge the sources did not supply.
 5. Hold everything extracted in this run only. Never copy a line from a global instruction file into `meditations.md` or into any output the user might share.

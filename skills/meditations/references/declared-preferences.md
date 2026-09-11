@@ -8,6 +8,8 @@ Read it. Do not persist it.
 
 ## Where to look, in priority order
 
+The paths below apply when running in a coding agent with authorised access to the user's files. In Claude Chat, use the conversation, supplied preferences and attachments instead. Do not treat its code-execution sandbox as the user's computer or imply that the skill can retrieve preferences from another app. Continue if no preferences were supplied.
+
 | Source | Path | Note |
 |---|---|---|
 | This skill's own record | `./meditations.md` | Strongest. Every line was confirmed by the user |
@@ -22,11 +24,11 @@ Read it. Do not persist it.
 Read every one that exists. Skip the rest silently in the file system and name
 them plainly in the report.
 
-**ChatGPT custom instructions and claude.ai personal preferences are stored on
-those services and never written to disk.** There is no path to read. If the
-user mentions either, offer once: "paste your custom instructions and I will
-include them in this run". Never ask twice, and never treat their absence as a
-gap in the reflection.
+**Another app's saved preferences are not local instruction files.** If the
+user wants those preferences included and they are not available in the current
+context, offer once: "paste the relevant preferences and I will include them in
+this run". Never ask twice, and never treat their absence as a gap in the
+reflection.
 
 ## Separating preference from plumbing
 
